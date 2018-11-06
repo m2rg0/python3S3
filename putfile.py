@@ -10,7 +10,7 @@ s3 = boto3.resource('s3')
 #        print(bucket.name)
 
 bucket = s3.Bucket('2x2demo')
-#what does rb mean
+#upload a file to S3
 try:
     data = open('/Users/mcronin/Documents/07Projects/endpointdemo/text_too.txt', 'rb')
 except Exception as error:
