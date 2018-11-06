@@ -10,7 +10,7 @@ bucket = s3.Bucket('2x2demo')
 print (bucket.name)
 print ()
 
-# This works:
+# This works too:
 # List contents of Bucket
 #for object in bucket.objects.all():
 #    print(object)
@@ -20,8 +20,4 @@ for file in bucket.objects.all():
     print (file.key, file.storage_class, file.last_modified)
     print()
 
-#does not work
-#for object in bucket.objects.all():
-#    yoke = object.Object()
-#    print(yoke.key, yoke.storage_class, yoke.last_modified, yoke.version_id, yoke.metadata)
-#    print()
+
