@@ -1,9 +1,5 @@
 #!/usr/bin/env python
-import sys
-#import boto3
-#s3 = boto3.resource('s3')
-#bucket = s3.Bucket('2x2demo')
-
+#import sys
 import boto3
 
 client = boto3.client('s3')
